@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>All pets</h1>
+    </div>
+  </div>
+  <div class="row">
+    <% @pets.each do |pet| %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <h2><%= link_to pet.name, pet_path(pet) %></h2>
+        <ul>
+          <li>Found: <%= pet.found_in_days %> days ago</li>
+          <li>At: <%= pet.address %></li>
+          <li>Species: <%= pet.species %></li>
+        </ul>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,7 @@
+<h2><%= @pet.name %></h2>
+  <ul>
+    <li>Found: <%= @pet.found_in_days %> days ago</li>
+    <li>At: <%= @pet.address %></li>
+    <li>Species: <%= @pet.species %></li>
+  </ul>
+<%= link_to "Back home", pets_path %>

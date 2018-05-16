@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class PetTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "#found_in_days should return an integer" do
+    snoopy = pets(:snoopy)
+    assert_instance_of Integer, snoopy.found_in_days
+  end
 end
